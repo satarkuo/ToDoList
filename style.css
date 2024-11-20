@@ -70,6 +70,7 @@ table {
   section.toDoList {
     max-width: 500px;
     margin: 40px auto;
+    position: relative;
   }
   input[type="text"] {
     border:1px solid #aaa;
@@ -103,8 +104,8 @@ table {
     color:#fff;
   }
   input.saveBtn:hover {
-    background:#333;
-    color:#690;
+    background:#79af0f;
+    color:#fff;
   }
   input.deleteBtn {
     background: #fff;
@@ -135,4 +136,36 @@ table {
   }
   ul.list li:nth-child(1) {
     border-top:1px solid #ddd;
+  }
+
+
+  .popup {
+    opacity: 0;
+	  float:right;
+    transition-duration: 0.3s;
+    background-color: #333;
+    color: #fff;
+    font-size:12px;
+    padding:6px 12px;
+    margin-top:-12px;
+    border-radius:16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+  }
+ .popup.show {
+    opacity: 1;
+    margin-top:0;
+  }
+  .popup.show.success {
+    background:#690;
+    color:#fff;
+  }
+  .popup.show.fail {
+    color:red;
+    border:1px solid red;
+  }
+  .popup.show.delete {
+    background:red;
+    color:#fff;
+    border:1px solid red;
   }
