@@ -3,7 +3,7 @@ const inputText = document.querySelector(".inputText");
 const list = document.querySelector(".list");
 const popup = document.querySelector(".popup");
 
-const data = [{content:"代辦項目1"},{content:"代辦項目2"}];
+const data = [{content:"繳信用卡帳單"},{content:"全聯採購晚餐食材"},{content:"圖書館還書"}];
 //渲染 HTML 結構至 .list
 function renderData(){
   let str = "";
