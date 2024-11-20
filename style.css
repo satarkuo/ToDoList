@@ -147,7 +147,8 @@ table {
     background-color: #333;
     color: #fff;
     font-size:12px;
-    padding:6px 12px;
+    line-height: 34px;
+    padding:0 12px;
     margin-top:-12px;
     border-radius:16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
