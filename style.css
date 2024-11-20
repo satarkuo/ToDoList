@@ -78,6 +78,7 @@ table {
     padding:4px 12px;
     font-size: 14px;
     border-radius: 8px;
+    width: 120px;
   }
   input[type="text"]::placeholder {
     color:#ccc;
