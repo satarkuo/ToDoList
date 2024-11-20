@@ -1,0 +1,138 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*-end of css reset--*/
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }
+  
+  html, body {
+    line-height: 1.5;
+  }
+  body{
+    background: #333;
+    padding:15px;
+  }
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 12px 0;
+    color:#83bb15;
+  }
+  section.toDoList {
+    max-width: 500px;
+    margin: 40px auto;
+  }
+  input[type="text"] {
+    border:1px solid #aaa;
+    line-height:24px;
+    padding:4px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+  input[type="text"]::placeholder {
+    color:#ccc;
+  }
+  
+  input[type="button"] {
+    border:1px solid #aaa;
+    line-height:24px;
+    padding:4px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-left: 4px;
+    color:#333;
+    letter-spacing: 2px;
+    transition-duration:0.3s;
+    cursor:pointer;
+  }
+  input.inputText {
+    border-color:#690;
+  }
+  input.saveBtn {
+    background:#690;
+    border-color:#690;
+    color:#fff;
+  }
+  input.saveBtn:hover {
+    background:#333;
+    color:#690;
+  }
+  input.deleteBtn {
+    background: #fff;
+  }
+  input.deleteBtn:hover {
+    background:#fff;
+    border-color:red;
+    color:red;
+  }
+  ul,li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  ul.list {
+    margin: 8px 0;
+    background: #efefef;
+    padding: 20px;
+    border-radius:8px;
+  }
+  ul.list li {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    line-height: 120%;
+    padding:8px 0;
+    border-bottom:1px solid #ddd;
+  }
+  ul.list li:nth-child(1) {
+    border-top:1px solid #ddd;
+  }
